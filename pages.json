@@ -1,0 +1,52 @@
+{
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "app-plus": {
+            "background": "#efeff4"
+        }
+    },
+    "pages": [
+        {
+            "path": "pages/home/home",
+            "style": {
+                "navigationBarTitleText": "首页",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/my",
+            "style": {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
+    "tabBar": {
+        "color": "#fff",
+        "backgroundColor": "#fff",
+        "selectedColor": "#f94d2a",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/home/home",
+                "iconPath": "static/tab-icons/hot.png",
+                "selectedIconPath": "static/tab-icons/hot-active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/my/my",
+                "iconPath": "static/tab-icons/my.png",
+                "selectedIconPath": "static/tab-icons/my-active.png"
+            }
+        ]
+    },
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
+        }
+    }
+}
